@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+
+/* barlow-300italic - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/barlow-v12-latin-300italic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/barlow-v12-latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/barlow-v12-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/barlow-v12-latin-300italic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/barlow-v12-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/barlow-v12-latin-300italic.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+  /* barlow-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/barlow-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/barlow-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/barlow-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/barlow-v12-latin-regular.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+  /* playfair-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/playfair-display-v30-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/playfair-display-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/playfair-display-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/playfair-display-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/playfair-display-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/playfair-display-v30-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+}
+/* playfair-display-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/playfair-display-v30-latin-600.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/playfair-display-v30-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/playfair-display-v30-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/playfair-display-v30-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/playfair-display-v30-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/playfair-display-v30-latin-600.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+}
+  /* barlow-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/barlow-v12-latin-500.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/barlow-v12-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/barlow-v12-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/barlow-v12-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/barlow-v12-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/barlow-v12-latin-500.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+  /* barlow-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/barlow-v12-latin-600.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/barlow-v12-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/barlow-v12-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/barlow-v12-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/barlow-v12-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/barlow-v12-latin-600.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+  /* barlow-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/barlow-v12-latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/barlow-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/barlow-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/barlow-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/barlow-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/barlow-v12-latin-700.svg#Barlow') format('svg'); /* Legacy iOS */
+  }
+body{
+    font-family: "Roboto",sans-serif;
+    font-family: "Barlow",sans-serif;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+}
+a{ 
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-style:"Roboto",sans-serif;
+  font-style:"Barlow",sans-serif;
+}
+.container{
+  --bs-gutter-x: 0rem !important;
+}
+:root{
+    --font-family-roboto:"Roboto",sans-serif;
+    --font-family-barlow:"Barlow",sans-serif;
+    --bgfontcolor-light:#636363;
+    --bgfontcolot-dark:#2e3c40;
+    --nav-text:#ff2828;
+    --font-family-Playfair:"Playfair,regular"; 
+    /* contect olor-white:#fff; */
+}
+.bg_color{
+  background-color:#fff;
+}
+.row{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spacer{
+  padding-top:100px !important;
+  padding-bottom: 100px !important;
+}
+#scroll_up{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+#scroll_up i{
+  background-color:var(--nav-text);
+  box-shadow: 0 0 2px #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #ffff;
+}
+
+/* Target the scrollbar for webkit-based browsers */
+.scroll-container::-webkit-scrollbar {
+  width: 15px; 
+  height: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #282727; 
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 10px; 
+}
+
+
+.scroll-container {
+  scrollbar-width: thin; 
+  scrollbar-color: #888 #f1f1f1; 
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color:#fdfdfd;
+  background-image: linear-gradient(to top, #FD7E2F ,#dc3545 );
+  border-radius: 10px; 
+}
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.spacer{
+  padding-top:190px;
+  padding-bottom: 190px;
+}
+.loder{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+/* -------------------------------------header------------------ */
+
+.navigation > li > a{
+  color: #3c3e48;
+  padding:  15px;
+  transition: .2s;
+  font-weight: 500;   
+}
+.min_manu  {
+  position: relative;
+}
+.min_manu li {
+  z-index: 20;
+}
+.navigation > li > a:hover{
+  color: var(--nav-text);
+}
+.sub_manu{
+   top: 100%;
+   padding: 17px 0;
+   border-top:5px solid #ff2828;
+   border-bottom: 5px solid #ff2828;
+   border-radius: 0 37px 0 24px;
+   background-color: #fff;
+   display: none; 
+}
+
+.sub_manu li a {
+  display: block;
+  padding:6px 10px;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 100px;
+  color: #2e3c40;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: "Barlow",sans-serif;
+  transition: .3s
+}
+
+.navigation > li:nth-child(5) > a{
+  padding-bottom:53px;
+}
+.sub_manu li a:hover{
+  color: var(--nav-text);
+}
+.navigation li:hover .sub_manu{
+  display: block;
+}
+/* -------------------------------------baner ------------------ */
+.baner_img{
+  transform: scale(1.2);
+}
+.baner_text  .text_baner1{
+  text-transform: uppercase;
+  padding-left: 50px;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: var(--font-family-barlow);
+  line-height: 1.2;
+  text-transform: uppercase ;
+  text-align: center;
+  letter-spacing: 5px;
+}
+#baner_img .baner_text .text_baner1::before{
+  content:'';
+  position: absolute;
+  top: -9px;
+  left: 0;
+  background-image: url(../img/asset\ 55.png);
+  width: 36px;
+  height: 45px;
+}
+.baner_text h2::before{
+  content: '';
+  position: absolute;
+  background-image: url(../img/asset\ 56.png);
+  width: 80px;
+  height: 84px;
+  top: 6px;
+  right:-49px;
+}
+.baner_text h2{
+  color: #fff;
+  font-size: 99px;
+  font-weight: 700;
+  font-family: var(--font-family-Playfair);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.baner_text strong{
+    color: #fff;
+    font-size: 49px;
+    font-weight: 400;
+    padding: 0 7px 0 10px;
+    font-family: var(--font-family-Playfair);
+} 
+.baner_text .h1    {
+  color: #fff;
+  font-size: 23px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: var(--font-family-roboto);
+}
+/* start  story  */
+.section_tital{
+  margin-bottom:  70px ;
+}
+.section_tital h2{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  color: #212121;
+  font-family: var(--font-family-Playfair);
+}
+.section_tital img{
+  margin-bottom: 15px;
+  width: 60%;
+}
+.section_tital p{
+  font-family: var(--font-family-roboto);
+  font-size: 16px;
+  color: #2e3c40;
+  text-align: center;
+}
+ .story_caption img {
+  background-repeat: no-repeat;
+  height:100%;
+  width:100%;
+  background-size: cover;
+  object-fit: cover;
+  /* overflow: hidden; */
+}
+.story_img{
+  position: relative;
+  bottom: -51px;
+  left: -30px;
+}
+.story_detals{
+  padding-left:150px;
+  padding-right: 24px;
+}
+.story_detals  h4{
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 30px;
+  font-family: var(--font-family-Playfair);
+}
+.story_detals .story_contion_1{
+  font-size: 16px ;
+  line-height: 30px;
+  font-family: var(--font-family-roboto);
+}
+.story_img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  background-position:center center;
+}
+/* end story  */
+
+/* start Wedding Info Wedding Info */
+.wedding_img{
+    background-image: url(../img/asset\ 58.png);
+}
+.singal_card{
+  background-color: var(--text-color-white);
+  box-shadow: 0px 0px 9px 0px rgb(131 93 248 / 7%);
+   padding:70px 25px;
+   border: 2px solid transparent;
+   padding-bottom: 0px;
+   transition: .3s;
+  }
+.singal_card.active {   
+  padding-bottom: 70px;
+}
+.singal_card:hover{
+  border: 2px solid var(--nav-text);
+  padding-bottom: 70px;
+  opacity: 1;
+}
+
+.card_top{
+  border-bottom: 2px solid #f4f4f4;
+  margin-bottom: 46px;
+}
+.card_top i{
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.card_top h4{
+  font-weight: 700;
+  font-size: 25px;
+  color: #2e3c40;
+  font-family: var(--font-family-Playfair);
+}
+.card_bootom  li h3 {
+    color: #636363;
+    font-weight: 300;
+    margin-bottom: 26px;
+    font-size: 16px;
+    font-family: var(--font-family-Playfair);
+}
+.submit_info{
+  font-weight: 700;
+  color: #fff;
+}
+.card_bootom li{
+  margin-bottom:26px ;
+}
+.card_bootom i {
+  color: #636363;
+}
+:hover{
+  opacity: 1;
+}
+/* end Wedding Info Wedding Info */
+/* count-doun start   */
+.count_dowen1{
+  background-image: url(../img/asset\ 59.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+.singal_countdoun{
+  padding: 44px 10px 44px 9px;
+  margin-bottom: 30px;
+}
+.singal_countdoun span{
+  font-family: var(--font-family-barlow);
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.count{
+  top: -81px;
+}
+/* count-doun end  */
+ /* Gallery Area Start */
+ .singal_gallery_img{
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  transition: all .4s ease-out 0s;
+ }
+ .contin_box::before{
+  content: '';
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-image: url(../img/asset\ 61.png);
+  width: 108px !important;
+  height: 61px !important;
+  background-repeat: no-repeat;
+}
+.contin_box{
+  bottom: 0;
+  color:var(--text-color-white);
+  font-family: var(--font-family-Playfair);
+  background-color: #dc3545;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 32px 97px 32px 40px;
+}
+.contin_box_gallery{
+  display: none;
+}
+.singal_gallery_img:hover .contin_box_gallery {
+  display: block;
+}
+ /* Gallery Area end */
+/* gift caption  */
+.gift-ara{
+  width: 100%;
+  background-image: url(../img/asset\ 65.png);
+  object-fit: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.gift_caption h2{
+  font-family: var(--font-family-Playfair);
+  line-height: 1.2;
+  font-size: 70px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 14px
+}
+.gift_caption p{
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 1.3;
+  margin-bottom: 60px;
+  font-family: var(--font-family-roboto);
+}
+ .btn-box{
+  transition: .5s;
+  background-color: #f1f1f1;
+  text-transform: capitalize;
+  padding: 15px 55px;
+  font-weight: 400;
+  font-size: 16px;
+  color:#282727;
+  
+}
+.btn-box:hover {
+  background-color: #da1b1b;
+  color:var(--text-color-white);
+}
+.gift{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ /* contec-form start */
+.section_title img{
+  width:unset;
+  font-family: var(--font-family-Playfair);
+}
+.form_ara{
+  background-color: var(--text-color-white);
+  padding: 125px 70px 115px 70px ;
+  box-shadow: 0 6px 86px 0 rgb(0, 0, 0 ,6%) ;
+  position: relative;
+}
+.form_name{
+  margin-bottom: 30px;
+}
+.form_name input,textarea{
+  background: none;
+  height: 60px;
+  width: 100%;
+  padding: 10px 20px;
+  padding-right: 30px;
+  color: #a3a3a3;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
+textarea{
+  resize: none;
+  height: auto;
+}
+.space_frmo img{
+  width: 100%;
+  height:auto;
+  top: 18px;
+  left: 16px;
+  background-repeat: no-repeat;
+}
+.submit_info .btn-box{
+  color: var(--text-color-white);
+  background-color: #ff2828;
+}
+.submit_info .btn-box:hover{
+  background-color: #DA1B1B;
+  color: #fff;
+}
+ /* contec-form end  */
+
+ /* footer   strt */
+ .footer_ara{
+  background-image: url(../img/asset\ 66.png);
+ }
+ .footer_text li a{
+    color: #cfcfcf;
+    font-weight: 300;
+    margin-bottom: 5px;
+ }
+ .footer_text  li {
+  margin-bottom: 15px;
+ }
+ .footer_main_text h3 {
+  font-family: var(--font-family-roboto);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: var(--text-color-white);
+ }
+ /* footer end  */
+
+/* footer bootm  strt  */
+
+.footer_boder{
+  padding: 33px 0 33px;
+}
+.footer_boder a{
+  color: var(--nav-text);
+}
+.footer_boder a:hover{
+  color: #fff;
+  transition: .3s ease-out 0s; 
+}
+/* footer bootm  end   */
+
+/* =================================================================================================================
+                                        About US
+============================================================================================================== */
+
+/* baner  */
+.baner_text1 h3{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: var(--font-family-Playfair);
+  
+}
+
+
+/* =================================================================================================================
+                          gallery              
+============================================================================================================== */
+
+.form-wrappee{
+  /* background: #fff; */
+  /* padding: 125px 70px 115px 70px; */
+  padding: 10px;
+  box-shadow: 0px 0px 86px 0px rgb(0 0 0 / 6%);
+}
+.back_img{
+  background-image: url(../img/asset\ 4.png);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  height: 100%;
+  width: 100%;
+}
+.section_total{
+  padding-top: 100px;
+}
+.section_total h2{
+  font-family: var(--font-family-Playfair);
+  color: #212121;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 30px;
+}
+.section_total img{
+  width:unset;
+}
+.form_box_input{
+   margin-bottom: 30px;
+   display: flex;
+   flex-direction: column;
+}
+.form_box_input input{
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  color: #a3a3a3;
+  font-weight: 500; 
+  border: 1px solid #a3a3a3;
+  border-radius: 5px;
+}
+/* ============================================
+      bolg 
+===================================================================== */
+.row{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.btun_bolg{
+  background-color: var(--nav-text);
+}
+.bolg_item a{
+  bottom: -20px;
+  left: 40px;
+  padding: 13px 30px;
+  /* background-color: var(--nav-text); */
+  color: var(--text-color-white);
+  font-family: var(--font-family-Playfair);
+  transition: .4s;
+}
+.bolg_item_detals{
+  background-color: var(--text-color-white);
+  box-shadow: 0px 10px 20px 0px rgba(221,221,221,0.3);
+}
+.btun_bolg:hover{
+  color: var(--nav-text);
+  background-color: transparent;
+}
+.bolg_item_detals a{
+  color: #212121;
+  font-family: var(--font-family-Playfair);
+}
+.bolg_item_detals a:hover{
+  color: var(--nav-text);
+}
+
+.page-link,.page-item  a{
+  color: #888;
+}
+.page-link:hover{
+  color: var(--nav-text);
+}
+.blog_item{
+  padding: 30px;
+}
+.surch_button_blog button{
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.from_group button{
+  padding: 18px 44px 18px 44px;
+  /* color: var(--nav-text); */
+    border: 2px solid #DA1B1B;
+  color: var(--nav-text);
+}
+.bolg_list li a{
+
+  color: #2E3C68;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .3s;
+}
+.bolg_list a:hover{
+  color: var(--nav-text);
+}      
+
+
+/* contect  */
+
+
+
+
+
+.form-control:focus{
+  background-color: none;
+  box-shadow: none;
+  border-color:#454545;
+  outline: none;
+}
